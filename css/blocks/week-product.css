@@ -1,0 +1,33 @@
+.week-product__img {
+  height: 315px;
+}
+@media (min-width: 768px) {
+  .week-product__img {
+    height: 404px;
+  }
+  .week-product__header {
+    display: flex;
+  }
+  .week-product__content {
+    position: relative;
+  }
+  .week-product__description {
+    width: 334px;
+  }
+  .week-product__img {
+    position: absolute;
+    top: -10px;
+    right: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .week-product__img {
+    height: 636px;
+  }
+  .week-product__apostrophe {
+    order: -1;
+  }
+  .week-product__img {
+    top: -65px;
+  }
+}

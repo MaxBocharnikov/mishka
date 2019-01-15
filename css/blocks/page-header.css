@@ -1,0 +1,16 @@
+.page-header__wrapper {
+  display: flex;
+}
+.page-header__logo {
+  width: 35px;
+}
+@media (min-width: 768px) {
+  .page-header__logo {
+    width: 46px;
+  }
+}
+@media (min-width: 1200px) {
+  .page-header__logo {
+    width: 72px;
+  }
+}

@@ -1,0 +1,11 @@
+.page-description__title {
+  height: 372px;
+}
+@media (min-width: 768px) {
+  .page-description__title {
+    height: 746px;
+  }
+  .page-description__list {
+    display: flex;
+  }
+}
