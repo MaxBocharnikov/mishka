@@ -1,0 +1,23 @@
+.page-footer__logo {
+  display: none;
+}
+.socials__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+.socials__item {
+  margin-right: 20px;
+}
+@media (min-width: 768px) {
+  .page-footer__logo {
+    display: block;
+    width: 102px;
+    height: 34px;
+  }
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}

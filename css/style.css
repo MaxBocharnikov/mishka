@@ -9,6 +9,10 @@ img {
   width: 100%;
   height: auto;
 }
+.wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
 @media (min-width: 768px) {
   .wrapper {
     width: 668px;
@@ -90,5 +94,105 @@ img {
   .about-us__list {
     display: flex;
     flex-wrap: wrap;
+  }
+}
+@media (min-width: 768px) {
+  .reviews {
+    position: relative;
+  }
+  .reviews__send {
+    position: absolute;
+    right: 0px;
+    top: 10px;
+  }
+  .reviews_switchers {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+  }
+}
+.contacts__list {
+  display: table;
+  border-collapse: collapse;
+}
+.contacts__email,
+.contacts__address {
+  display: table-row;
+}
+.contacts__label,
+.contacts__item {
+  display: table-cell;
+  min-width: 50px;
+}
+.contacts__label {
+  padding-right: 20px;
+}
+.contacts__map {
+  width: 100%;
+  height: 457px;
+}
+@media (min-width: 768px) {
+  .contacts__list {
+    display: flex;
+    position: relative;
+  }
+  .contacts__list:after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 47px;
+    height: 81px;
+    background: green;
+  }
+  .contacts__email {
+    margin-right: 40px;
+  }
+  .contacts__map {
+    width: 100%;
+    height: 457px;
+  }
+}
+@media (min-width: 1200px) {
+  .contacts {
+    position: relative;
+  }
+  .contacts__map {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .contacts__list {
+    display: table;
+  }
+  .contacts__list:after {
+    left: 0;
+  }
+  .contacts__map {
+    width: 525px;
+    height: 457px;
+  }
+}
+.page-footer__logo {
+  display: none;
+}
+.socials__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+.socials__item {
+  margin-right: 20px;
+}
+@media (min-width: 768px) {
+  .page-footer__logo {
+    display: block;
+    width: 102px;
+    height: 34px;
+  }
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
   }
 }

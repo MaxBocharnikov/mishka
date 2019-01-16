@@ -1,0 +1,29 @@
+@import "../variables.less";
+@import "../mixins.less";
+
+.page-footer__logo {
+	display: none;
+}
+
+.socials__list {
+	.no-list;
+	display: flex;
+}
+
+.socials__item {
+	margin-right: 20px;
+}
+
+
+@media (min-width: @tablet-width) {
+	.page-footer__logo {
+		display: block;
+		width: 102px;
+		height: 34px;
+	}
+
+	.page-footer__wrapper {
+		display: flex;
+		justify-content: space-between;
+	}
+}

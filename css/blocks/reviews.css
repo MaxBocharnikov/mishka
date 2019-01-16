@@ -1,0 +1,15 @@
+@media (min-width: 768px) {
+  .reviews {
+    position: relative;
+  }
+  .reviews__send {
+    position: absolute;
+    right: 0px;
+    top: 10px;
+  }
+  .reviews_switchers {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+  }
+}
