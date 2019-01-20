@@ -1,0 +1,70 @@
+@import "../variables.less";
+@import "../mixins.less";
+
+
+.product__content {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+.product__img {
+	width: 260px;
+	height: 315px;
+
+	margin-bottom: 55px;
+}
+
+.product__order {
+	position:absolute;
+	bottom: 0;
+}
+
+.product__options {
+	.no-list;
+}
+
+
+@media (min-width: @tablet-width) {
+	.product__header {
+		display: flex;
+	}
+
+	.product__content {
+		flex-direction: row;
+	}
+
+	.product__order {
+		position:static;
+	}
+
+	.product__img {
+		width: 333px;
+		height: 404px;
+	}
+}
+
+
+@media (min-width: @desktop-width) {
+	.product__wrapper {
+		position:relative;
+	}
+
+	.product__header {
+		position:absolute;
+		top: 20px;
+	}
+
+	.product__img {
+		width: 525px;
+		height: 636px;
+	}
+
+	.product__type {
+		order: -1;
+	}
+
+	.product__text {
+		margin-top: 165px;
+	}
+}

@@ -2,16 +2,46 @@
 @import "../mixins.less";
 
 .about-us__list {
-	.no-list;
+	 .no-list; 
+}
+
+.about-us__item {
+	width: 210px;
+	margin-right: 20px;
+	margin-bottom: 20px;
 }
 
 @media (min-width: @tablet-width) {
-
 	.about-us__list {
 		display: flex;
 		flex-wrap: wrap;
-		
 	}
 
+	.about-us__item {
+
+		&--flower {
+			order: 1;
+		}
+
+		&--money {
+			order:3;
+		}
+
+		&--heart {
+			order: 5;
+		}
+
+		&--ball {
+			order: 2;
+		}
+
+		&--rocket {
+			order: 4;
+		}
+
+		&--present {
+			order: 6;
+		}
+	}
 	
 }
