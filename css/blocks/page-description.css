@@ -1,0 +1,21 @@
+.default {
+  margin: 0;
+  padding: 0;
+}
+.page-description {
+  background: grey;
+}
+.page-description__title {
+  height: 372px;
+  margin: 0;
+  padding: 0;
+}
+@media (min-width: 768px) {
+  .page-description__title {
+    height: 746px;
+    padding-top: 80px;
+  }
+  .page-description__list {
+    display: flex;
+  }
+}

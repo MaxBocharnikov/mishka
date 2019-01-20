@@ -1,0 +1,53 @@
+@import "../variables.less";
+@import "../mixins.less";
+
+
+.nav-menu__list {
+	.no-list;
+}
+
+.nav-menu__item {
+	margin: 0;
+	padding: 0;
+
+	&--hidden {
+		display: none;
+	}
+}
+
+
+.nav-menu__toggle {
+	position: absolute;
+	right: 0;
+	top: 20px;
+}
+
+
+
+@media (min-width: @tablet-width) {
+
+
+	.nav-menu__toggle {
+		display: none;
+	}
+
+	.nav-menu {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.nav-menu__list {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+}
+
+
+@media (min-width: @desktop-width) {
+	.nav-menu__item {
+		&--hidden {
+			display: block;
+		}
+	}
+}

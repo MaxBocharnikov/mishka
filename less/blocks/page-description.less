@@ -1,0 +1,28 @@
+@import "../variables.less";
+@import "../mixins.less";
+
+.page-description {
+	background: grey;
+}
+.page-description__title {
+	height: 372px;
+	.default;
+}
+
+
+//tablet
+@media (min-width: @tablet-width) {
+
+	.page-description__title {
+		height: 746px;
+		  	padding-top: 80px;
+	}
+
+
+	.page-description__list {
+		display: flex;
+	}
+}
+
+
+

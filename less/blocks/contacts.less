@@ -1,0 +1,53 @@
+@import "../variables.less";
+@import "../mixins.less";
+
+
+.contacts__map {
+	width: 320px;
+	height: 457px;
+}
+
+.contacts__list {
+	.no-list;
+	display: flex;
+	flex-direction: column;
+}
+
+.contacts__item {
+	display: flex;
+	width: 334px;
+}
+
+
+
+@media (min-width: @tablet-width) {
+	.contacts__map {
+		width: 768px;
+	}
+
+	.contacts__list {
+		flex-direction: row;
+	}
+}
+
+
+@media (min-width: @desktop-width) {
+	.contacts__map {
+		width: 525px;
+	}
+
+	.contacts__wrapper {
+		position: relative;
+		display: flex;
+	}
+
+	.contacts__list {
+		flex-direction: column;
+	}
+
+	.contacts_text-us {
+		position:absolute;
+		bottom: 0;
+		left: 100px;
+	}
+}
