@@ -15,28 +15,21 @@
 	 		<img src="" alt="Mishka">
 	 	</a>
 
-	 	<button class="page-header__toggle nav-menu__toggle">Открыть</button>
 
 
-	 	<div class="page-header__catalog nav-menu">
-		 	<ul class="page-header__list nav-menu__list">
+
+	 	<nav class="page-header__catalog nav-menu">
+	 		<button class="page-header__toggle nav-menu__toggle">Открыть</button>
+		 	<ul class="page-header__list nav-menu__list nav-menu__list--catalog">
 		 		<li class="page-header__item nav-menu__item">
 		 			<a class="page-header_link nav-menu__link">Каталог товаров</a>
 		 		</li>
 		 		<li class="page-header__item nav-menu__item">
 		 			<a class="page-header_link nav-menu__link">Вязание на заказ</a>
 		 		</li>
-		 		<li class="page-header__item nav-menu__item--hidden">
-		 			<a class="page-header_link nav-menu__link">Новые поступления</a>
-		 		</li>
-		 		<li class="page-header__item nav-menu__item--hidden">
-		 				<a class="page-header_link nav-menu__link">Распродажа</a>
-		 		</li>
 		 	</ul>
-		 </div>
 
-		 <div class="page-header__user-block nav-menu">
-		 	<ul class="page-header__list nav-menu__list">
+		 	<ul class="page-header__list nav-menu__list nav-menu__list--user">
 		 		<li class="page-header__item nav-menu__item">
 		 			<a class="page-header_link nav-menu__link">Поиск по сайту</a>
 		 		</li>
@@ -44,7 +37,16 @@
 		 			<a class="page-header_link nav-menu__link">Корзина: пока пуста</a>
 		 		</li>
 		 	</ul>
-		 </div>
+
+		 	<ul class="page-header__list nav-menu__list nav-menu__list--hidden">
+		 		<li class="page-header__item nav-menu__item">
+		 			<a class="page-header_link nav-menu__link">Новые поступления</a>
+		 		</li>
+		 		<li class="page-header__item nav-menu__item">
+		 			<a class="page-header_link nav-menu__link">Распродажа</a>
+		 		</li>
+		 	</ul>
+		 </nav>
 
 	 	<span class="page-header__delivery-info">Бесплатная доставка по России</span>
 
