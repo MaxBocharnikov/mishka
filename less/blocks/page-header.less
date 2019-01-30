@@ -37,7 +37,8 @@
 		width: 113px;
 		height: 46px;
 
-		margin-right: 238px;
+		margin-left: 0;
+		//margin-right: 238px;
 	}
 
 
@@ -46,6 +47,8 @@
 		position: absolute;
 		top:109px;
 		right: 0;
+
+		font-size: 15px;
 	}
 
 
@@ -54,6 +57,10 @@
 
 
 @media (min-width: @desktop-width) {
+
+	.page-header {
+		min-height: 89px;
+	}
 
 	.page-header__logo {
 		position:absolute;
@@ -65,6 +72,8 @@
 
 		width: 149px;
 		height: 72px;
+
+		z-index: 2;
 	}
 
 
