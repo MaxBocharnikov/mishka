@@ -1,9 +1,25 @@
+/* open-sans-regular - cyrillic_cyrillic-ext_latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url('../fonts/open-sans-v15-cyrillic_cyrillic-ext_latin-regular.woff2') format('woff2'), /* Super Modern Browsers */ url('../fonts/open-sans-v15-cyrillic_cyrillic-ext_latin-regular.woff') format('woff'), /* Modern Browsers */;
+}
+/* open-sans-700 - cyrillic_cyrillic-ext_latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url('../fonts/open-sans-v15-cyrillic_cyrillic-ext_latin-700.woff2') format('woff2'), /* Super Modern Browsers */ url('../fonts/open-sans-v15-cyrillic_cyrillic-ext_latin-700.woff') format('woff'), /* Modern Browsers */;
+}
 body {
   min-width: 320px;
   font-size: 17px;
   line-height: 20px;
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
+  margin: 0;
+  padding: 0;
 }
 img {
   width: 100%;
@@ -15,7 +31,7 @@ img {
 }
 @media (min-width: 768px) {
   body {
-    padding-top: 40px;
+    margin: 0;
   }
   .wrapper {
     width: 668px;

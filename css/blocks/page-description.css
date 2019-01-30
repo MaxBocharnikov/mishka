@@ -2,18 +2,14 @@
   margin: 0;
   padding: 0;
 }
-.page-description {
-  background: grey;
-}
 .page-description__title {
+  padding-top: 20px;
   height: 372px;
-  margin: 0;
-  padding: 0;
 }
 @media (min-width: 768px) {
   .page-description__title {
     height: 746px;
-    padding-top: 80px;
+    padding-top: 130px;
   }
   .page-description__list {
     display: flex;
