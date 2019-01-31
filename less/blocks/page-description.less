@@ -1,11 +1,87 @@
 @import "../variables.less";
 @import "../mixins.less";
 
+.page-description {
+	background: #F9F9F9;
+}
 
 .page-description__title {
-	padding-top: 20px;
-	height: 372px;
-//	.default;
+	.default;
+	padding-top: 71px;
+	min-height: 283px;
+	box-sizing: border-box;
+
+	font-size: 27px;
+	font-weight: bold;
+	line-height: 30px;
+	text-align: center;
+
+	background: url("../img/page-description/hero-mobile.jpg");
+	background-position-y: -15px;
+}
+
+
+.page-description__list {
+	position: relative;
+	.no-list;
+}
+
+.page-description__item {
+	.default;
+
+	position: relative;
+	padding-top: 28px;
+	padding-bottom:27px;
+
+
+	& a {
+		display: inline-block;
+		padding-left: 30px;
+		padding-right: 130px;
+
+		font-weight: bold;
+		font-size: 19px;
+		line-height: 24px;
+		color: #ffffff;
+		text-decoration: none;
+	}
+
+
+	&::after {
+		content: "";
+		position: absolute;
+	}
+
+	&--interior {
+		background: #73D5C1;
+
+		&::after {
+
+			width: 41px;
+			height: 62px;
+
+			top: 23px;
+			right: 33px;
+
+			background: url("../img/page-description/interior.png");
+		}
+	}
+
+	&--toy {
+		background: #67C8B8;
+
+
+		&::after {
+
+			width: 61px;
+			height: 61px;
+
+			top: 22px;
+			right: 28px;
+
+			background: url("../img/page-description/toy.png");
+		}
+	}
 }
 
 
@@ -13,14 +89,120 @@
 @media (min-width: @tablet-width) {
 
 	.page-description__title {
-		height: 746px;
-		  	padding-top: 130px;
+		padding-top: 154px;
+		min-height: 627px;
+
+		font-size: 43px;
+		line-height: 50px;
+
+		background: url("../img/page-description/hero-desktop.jpg") no-repeat;
+			background-position-x: -50px;
+
+			& br {
+			 	display: none;
+			}
 	}
 
 
 	.page-description__list {
 		display: flex;
+		position: relative;
+
+		&::after {
+			content: "";
+			position:absolute;
+
+			width: 768px;
+			height: 24px;
+
+			bottom: -15px;
+			left: -7px;
+
+			background: url("../img/page-description/zigzag-fill-desktop.png") no-repeat;
+		}
 	}
+
+	.page-description__item {
+		width: 50%;
+
+		& a {
+
+			padding-left: 36px;
+			font-size: 20px;
+			line-height: 30px;
+		}
+
+		&--interior {
+			&::after {
+				top: 29px;
+	    		right: 39px;
+			}
+		}
+
+		&--toy {
+			&::after {
+				top: 27px;
+	    		right: 33px;
+			}
+		}
+	}
+
+}	
+
+@media (min-width: @desktop-width) 	{
+
+	.page-description__title {
+		font-size: 53px;
+		line-height: 57px;
+	
+		width: 700px;
+		margin-left: 172px;
+
+
+	
+		background: url("../img/page-description/hero-desktop-1.jpg") no-repeat;
+		background-position-x: -270px;	
+	}
+
+	.page-description__list {
+		&::after {
+			width: 1250px;
+			height: 34px;
+
+			bottom: -18px;
+			left: -33px;
+
+			background: url("../img/page-description/zigzag-fill-desktop-1.png") no-repeat;
+		}
+	}
+
+	.page-description__item {
+		padding-top: 26px;
+		padding-bottom: 32px;
+		padding-left: 4px;
+
+		& a {
+			width: 175px;
+
+		}
+
+		&--interior {
+			&::after {
+				right: 39px;
+			}
+		}
+
+		&--toy {
+			&::after {
+				right: 33px;
+			}
+		}
+	}
+
+	
+
+
+
 }
 
 
