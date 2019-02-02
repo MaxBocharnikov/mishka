@@ -358,6 +358,12 @@ img {
   padding-top: 28px;
   padding-bottom: 27px;
 }
+.page-description__item:active a {
+  opacity: 0.3;
+}
+.page-description__item:active::after {
+  opacity: 0.3;
+}
 .page-description__item a {
   display: inline-block;
   padding-left: 30px;
@@ -375,6 +381,9 @@ img {
 .page-description__item--interior {
   background: #73D5C1;
 }
+.page-description__item--interior:hover {
+  background: #6AD8C1;
+}
 .page-description__item--interior::after {
   width: 41px;
   height: 62px;
@@ -384,6 +393,9 @@ img {
 }
 .page-description__item--toy {
   background: #67C8B8;
+}
+.page-description__item--toy:hover {
+  background: #5AC6B5;
 }
 .page-description__item--toy::after {
   width: 61px;
@@ -413,12 +425,16 @@ img {
     position: absolute;
     width: 768px;
     height: 24px;
-    bottom: -15px;
+    bottom: -10px;
     left: -7px;
     background: url("../img/page-description/zigzag-fill-desktop.png") no-repeat;
   }
   .page-description__item {
     width: 50%;
+    padding-bottom: 27px;
+  }
+  .page-description__item:hover {
+    bottom: 5px;
   }
   .page-description__item a {
     padding-left: 36px;
@@ -446,13 +462,13 @@ img {
   .page-description__list::after {
     width: 1250px;
     height: 34px;
-    bottom: -18px;
+    bottom: -12px;
     left: -33px;
     background: url("../img/page-description/zigzag-fill-desktop-1.png") no-repeat;
   }
   .page-description__item {
     padding-top: 26px;
-    padding-bottom: 32px;
+    padding-bottom: 37px;
     padding-left: 4px;
   }
   .page-description__item a {
