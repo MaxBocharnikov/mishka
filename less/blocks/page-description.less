@@ -33,6 +33,13 @@
 	padding-top: 28px;
 	padding-bottom:27px;
 
+		&:active a {
+			opacity: 0.3;
+		}
+
+		&:active::after {
+			opacity: 0.3;
+		}
 
 	& a {
 		display: inline-block;
@@ -55,6 +62,11 @@
 	&--interior {
 		background: #73D5C1;
 
+		&:hover {
+			background:#6AD8C1;
+		}
+
+
 		&::after {
 
 			width: 41px;
@@ -70,6 +82,9 @@
 	&--toy {
 		background: #67C8B8;
 
+		&:hover {
+			background:#5AC6B5;
+		}
 
 		&::after {
 
@@ -115,7 +130,7 @@
 			width: 768px;
 			height: 24px;
 
-			bottom: -15px;
+			bottom: -10px;
 			left: -7px;
 
 			background: url("../img/page-description/zigzag-fill-desktop.png") no-repeat;
@@ -124,6 +139,11 @@
 
 	.page-description__item {
 		width: 50%;
+		padding-bottom:27px;
+
+		&:hover {
+			bottom: 5px;
+		}
 
 		& a {
 
@@ -169,7 +189,7 @@
 			width: 1250px;
 			height: 34px;
 
-			bottom: -18px;
+			bottom: -12px;
 			left: -33px;
 
 			background: url("../img/page-description/zigzag-fill-desktop-1.png") no-repeat;
@@ -178,7 +198,7 @@
 
 	.page-description__item {
 		padding-top: 26px;
-		padding-bottom: 32px;
+		padding-bottom: 37px;
 		padding-left: 4px;
 
 		& a {
