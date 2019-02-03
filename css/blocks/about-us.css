@@ -3,7 +3,7 @@
   padding: 0;
 }
 .about-us {
-  margin-bottom: 65px;
+  margin-bottom: 55px;
 }
 .about-us__wrapper {
   width: 260px;
@@ -76,6 +76,9 @@
   background: url("../img/about-us/present.png");
 }
 @media (min-width: 768px) {
+  .about-us {
+    margin-bottom: 17px;
+  }
   .about-us__wrapper {
     width: 668px;
   }
