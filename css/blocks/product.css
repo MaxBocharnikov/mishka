@@ -69,7 +69,8 @@
   font-weight: bold;
   text-align: center;
 }
-.product__send {
+.product__send,
+.button {
   display: inline-block;
   box-sizing: border-box;
   width: 260px;
@@ -82,11 +83,13 @@
   text-transform: uppercase;
   border: 2px solid #545454;
 }
-.product__send:hover {
+.product__send:hover,
+.button:hover {
   color: #ffffff;
   background: #545454;
 }
-.product__send:active {
+.product__send:active,
+.button:active {
   color: rgba(255, 255, 255, 0.3);
 }
 .product__options {
