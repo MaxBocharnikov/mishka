@@ -4,7 +4,7 @@
 }
 .reviews {
   position: relative;
-  margin-bottom: 39px;
+  margin-bottom: 35px;
 }
 .reviews::after {
   content: "";
@@ -93,6 +93,7 @@
 @media (min-width: 768px) {
   .reviews {
     padding-bottom: 86px;
+    margin-bottom: 62px;
   }
   .reviews::after {
     height: 17px;
@@ -147,6 +148,7 @@
 @media (min-width: 1200px) {
   .reviews {
     padding-bottom: 141px;
+    margin-bottom: 139px;
   }
   .reviews::after {
     height: 23px;
