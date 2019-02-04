@@ -1,29 +1,156 @@
 @import "../variables.less";
 @import "../mixins.less";
 
+
+.page-footer {
+	background: #F2F1F2;
+}
+
+.page-footer__wrapper {
+	width: @mobile-wrapper-width;
+}
+
 .page-footer__logo {
 	display: none;
 }
 
+
 .socials__list {
 	.no-list;
 	display: flex;
+
+	padding: 30px 0;
+	margin-left: 57px;
+
+	border-bottom: 1px solid #E7E7E7;
 }
 
 .socials__item {
-	margin-right: 20px;
+	position: relative;
+
+	margin-right: 67px;
 }
 
+.socials__link {
+	display: inline-block;
+	font-size: 0;
+
+	position: absolute;
+
+	&--instagram {
+		width: 22px;
+		height: 21px;
+
+		left: 2px;
+
+		background: url("../img/page-footer/insta.png");
+	}
+
+	&--facebook {
+		width: 15px;
+		height: 29px;
+
+		top: -4px;
+
+		background: url("../img/page-footer/fb.png");
+	}
+
+	&--twitter {
+		width: 24px;
+		height: 20px;
+
+		left: -16px;
+
+		background: url("../img/page-footer/twitter.png");
+	}
+}
+
+.page-footer__copyright {
+	position: relative;
+	margin-left: 40px;
+	padding: 30px 0;
+	padding-top: 47px;
+}
+
+.copyright__title {
+	display: inline-block;
+
+	font-size: 19px;
+	line-height: 18px;
+
+}
+
+.copyright__link {
+	font-size: 0;
+	position: absolute;
+
+	width: 27px;
+	height: 34px;
+
+     top: 43px;
+	 right: 36px;
+
+	background: url("../img/page-footer/htmlacademy.png");
+}
 
 @media (min-width: @tablet-width) {
+
+	.page-footer__wrapper {
+		width: @tablet-wrapper-width;
+	}
+
+
 	.page-footer__logo {
 		display: block;
 		width: 102px;
 		height: 34px;
+
+		padding: 52px 0;
 	}
 
 	.page-footer__wrapper {
 		display: flex;
 		justify-content: space-between;
 	}
+
+	.socials__list {
+		padding: 56px 0;
+		margin-left: 135px;
+	}
+
+	.socials__link {
+		
+		&--instagram {
+			top: 4px;
+		}
+
+		&--facebook {
+			top: 0;
+		}
+
+		&--twitter {
+			top: 4px;
+		}
+	}
+
+	.page-footer__copyright {
+		padding: 63px 0;
+		margin: 0;
+		margin-right: 54px;
+	} 
+
+	.copyright__link {
+		top: 58px;
+	    right: -56px;
+	}
+
+}
+
+
+@media (min-width: @desktop-width) {
+	.page-footer__wrapper {
+		width: @desktop-wrapper-width;
+	}
+
+
 }
