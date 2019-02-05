@@ -1,7 +1,10 @@
 var navMenu = document.querySelector('.nav-menu');
 var navToggle = document.querySelector('.nav-menu__toggle');
 
-
+var orderButton = document.querySelector('.product__send');
+var overlay = document.querySelector('.modal-overlay');
+var modalForm = document.querySelector('.modal-form');
+var modalSubmit = document.querySelector('.modal-form__submit');
 
 navMenu.classList.remove('nav-menu--nojs');
 navToggle.classList.remove('nav-menu__toggle--nojs');
@@ -31,3 +34,20 @@ navToggle.addEventListener('click', function() {
 
 
 });
+
+
+
+orderButton.addEventListener('click', function(e){
+	e.preventDefault();
+
+	overlay.classList.add('modal-overlay--opened');
+	modalForm.classList.add('modal-form--opened');
+});
+
+
+document.onkeydown = function(e) {
+	if(e.keyCode == 27) {
+		if(overlay.classList.contains('modal-overlay--opened')) overlay.classList.remove('modal-overlay--opened');
+		if(modalForm.classList.contains('modal-form--opened')) modalForm.classList.remove('modal-form--opened');
+	}
+}

@@ -229,7 +229,25 @@
  	</div>
  </footer>
 
-<div class="modal-overlay"></div>
+<div class="modal-form modal-form">
+	<div class="modal-form__wrapper wrapper">
+		<h2 class="modal-form__title">Добавить в корзину</h2>
+		<p class="modal-form__text">Выберите размер:</p>
+		<form  method="post" action="#" id="size-form">
+			<input type="radio" checked="checked" name="size" id="size-s" value="s" class="modal-form__size">
+			<label class="modal-form__label" for="size-s">S</label>
+
+			<input type="radio" name="size" id="size-m" value="m" class="modal-form__size">
+			<label class="modal-form__label" for="size-m">M</label>
+
+			<input type="radio" name="size" id="size-l" value="l" class="modal-form__size">
+			<label class="modal-form__label" for="size-l">L</label>
+
+			<input type="submit" class="modal-form__submit button" name="size-submit" value="Добавить">
+		</form>
+	</div>
+</div>
+<div class="modal-overlay modal-overlay"></div>
 
 <script type="text/javascript" src="js/script.js"></script>
 </body>
