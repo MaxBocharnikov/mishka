@@ -101,6 +101,7 @@ img {
   }
   .page-header__logo {
     position: absolute;
+    top: -15px;
     left: 0;
     right: 0;
     margin-left: auto;
@@ -168,47 +169,26 @@ img {
 }
 .nav-menu__toggle {
   position: absolute;
-  top: 37px;
+  top: 33px;
   right: 28px;
   font-size: 0;
   border: none;
+  outline: none;
   box-sizing: border-box;
   width: 21px;
-  height: 2px;
-  background: #353333;
 }
 .nav-menu__toggle--nojs {
   display: block;
 }
 .nav-menu__toggle--open,
 .nav-menu__toggle--nojs {
-  transform: rotate(45deg);
+  background: url("../img/page-header/menu-open.png");
+  height: 20px;
+  top: 30px;
 }
-.nav-menu__toggle--open::after,
-.nav-menu__toggle--nojs::after {
-  content: "";
-  position: absolute;
-  width: 21px;
-  height: 2px;
-  top: 0;
-  left: 0;
-  transform: rotate(90deg);
-  background: #353333;
-}
-.nav-menu__toggle--close::before,
-.nav-menu__toggle--close::after {
-  content: "";
-  position: absolute;
-  width: 21px;
-  height: 2px;
-  left: 0;
-  background: #353333;
-}
-.nav-menu__toggle--close::before {
-  top: -6px;
-}
-.nav-menu__toggle--close::after {
-  bottom: -6px;
+.nav-menu__toggle--close {
+  background: url("../img/page-header/menu-close.png");
+  height: 14px;
 }
 @media (min-width: 768px) {
   .nav-menu__toggle {
