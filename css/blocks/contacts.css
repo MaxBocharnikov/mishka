@@ -39,20 +39,7 @@
   height: 457px;
   bottom: 92px;
   right: -30px;
-  /*&::after {
-		content: "";
-		position: absolute;
-
-		width: 67px;
-		height: 100px;
-
-		top: 145px;
-    	left: 138px;
-
-		background: url("../img/contacts/map-pin.png"); 
-
-	}*/
-  background: green;
+  background: url("../img/contacts/map-mobile.svg");
 }
 .contacts__map iframe {
   width: 100%;
@@ -86,6 +73,15 @@
   text-decoration: none;
   border-bottom: 1px solid #72D5C0;
 }
+.contacts__value:hover a {
+  color: #46c1ae;
+  border-color: #5AC6B5;
+}
+.contacts__value:active a {
+  color: #46c1ae;
+  border-color: #72D5C0;
+  opacity: 0.3;
+}
 .contacts_text-us {
   text-decoration: none;
 }
@@ -114,11 +110,12 @@
     height: 81px;
     top: -15px;
     right: 5px;
-    background: url("../img/contacts/flag.png");
+    background: url("../img/contacts/flag.svg");
   }
   .contacts__map {
     width: 768px;
     bottom: 108px;
+    background: url("../img/contacts/map-tablet.svg");
   }
   .contacts__list {
     margin: 0;
@@ -148,6 +145,7 @@
     width: 525px;
     bottom: 0;
     right: 0;
+    background: url("../img/contacts/map-mobile.svg");
   }
   .contacts__wrapper {
     position: relative;

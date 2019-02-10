@@ -29,7 +29,7 @@
   font-weight: bold;
   line-height: 30px;
   text-align: center;
-  background: url("../img/page-description/hero-mobile.jpg");
+  background: url("../img/page-description/hero-mobile.svg");
   background-position-y: -15px;
 }
 .page-description__list {
@@ -76,7 +76,7 @@
   height: 62px;
   top: 23px;
   right: 33px;
-  background: url("../img/page-description/interior.png");
+  background: url("../img/page-description/interior.svg");
 }
 .page-description__item--toy {
   background: #67C8B8;
@@ -89,7 +89,7 @@
   height: 61px;
   top: 22px;
   right: 28px;
-  background: url("../img/page-description/toy.png");
+  background: url("../img/page-description/toy.svg");
 }
 @media (min-width: 768px) {
   .page-description__title {
@@ -97,7 +97,7 @@
     min-height: 627px;
     font-size: 43px;
     line-height: 50px;
-    background: url("../img/page-description/hero-desktop.jpg") no-repeat;
+    background: url("../img/page-description/hero-desktop.svg") no-repeat;
     background-position-x: -50px;
   }
   .page-description__title br {
@@ -114,7 +114,7 @@
     height: 24px;
     bottom: -10px;
     left: -7px;
-    background: url("../img/page-description/zigzag-fill-desktop.png") no-repeat;
+    background: url("../img/page-description/zigzag-fill-desktop.svg") no-repeat;
   }
   .page-description__item {
     width: 50%;
@@ -143,7 +143,7 @@
     line-height: 57px;
     width: 700px;
     margin-left: 172px;
-    background: url("../img/page-description/hero-desktop-1.jpg") no-repeat;
+    background: url("../img/page-description/hero-desktop-1.svg") no-repeat;
     background-position-x: -270px;
   }
   .page-description__list::after {
@@ -151,7 +151,7 @@
     height: 34px;
     bottom: -12px;
     left: -33px;
-    background: url("../img/page-description/zigzag-fill-desktop-1.png") no-repeat;
+    background: url("../img/page-description/zigzag-fill-desktop-1.svg") no-repeat;
   }
   .page-description__item {
     padding-top: 26px;
