@@ -37,13 +37,25 @@
 
 	position: absolute;
 
+	& svg {
+		fill:#231F20;
+	}
+
+	&:hover svg {
+		fill: #5AC6B5;
+		transition: all 0.2;
+	}
+
+	&:active svg {
+		opacity: 0.3;
+		transition: all 0.2;
+	}
+
 	&--instagram {
 		width: 22px;
 		height: 21px;
 
 		left: 2px;
-
-		background: url("../img/page-footer/insta.png");
 	}
 
 	&--facebook {
@@ -52,7 +64,6 @@
 
 		top: -4px;
 
-		background: url("../img/page-footer/fb.png");
 	}
 
 	&--twitter {
@@ -61,7 +72,6 @@
 
 		left: -16px;
 
-		background: url("../img/page-footer/twitter.png");
 	}
 }
 
@@ -90,7 +100,19 @@
      top: 43px;
 	 right: 36px;
 
-	background: url("../img/page-footer/htmlacademy.png");
+	 background: url("../img/page-footer/htmlacademy.svg");
+
+	opacity: 0.8;
+
+	&:active {
+	   opacity: 1.0;
+	    transition: all 0.2s;
+	}
+
+	 &:active {
+	   	opacity: 0.3;
+	    transition: all 0.2s;
+	}
 }
 
 @media (min-width: @tablet-width) {
@@ -106,6 +128,16 @@
 		height: 34px;
 
 		padding: 52px 0;
+
+		&:hover svg {
+			fill:#5AC6B5;
+			transition: all 0.2s;
+		}
+
+		&:active {
+			opacity: 0.3;
+			transition: all 0.2s;
+		}
 	}
 
 	.page-footer__wrapper {

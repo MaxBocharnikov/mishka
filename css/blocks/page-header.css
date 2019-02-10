@@ -32,6 +32,12 @@
   padding: 22px 0;
   margin: 0px auto;
 }
+.page-header__logo:hover {
+  opacity: 0.6;
+}
+.page-header__logo:active {
+  opacity: 0.3;
+}
 @media (min-width: 768px) {
   .page-header__wrapper {
     display: flex;
@@ -55,6 +61,7 @@
   }
   .page-header__logo {
     position: absolute;
+    top: -15px;
     left: 0;
     right: 0;
     margin-left: auto;

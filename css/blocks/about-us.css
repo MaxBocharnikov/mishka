@@ -52,42 +52,42 @@
   height: 38px;
   top: -1px;
   left: 10px;
-  background: url("../img/about-us/flower.png");
+  background: url("../img/about-us/flower.svg");
 }
 .about-us__item--money::before {
   width: 47px;
   height: 27px;
   top: -1px;
   left: 4px;
-  background: url("../img/about-us/money.png");
+  background: url("../img/about-us/money.svg");
 }
 .about-us__item--heart::before {
   width: 34px;
   height: 27px;
   top: -1px;
   left: 10px;
-  background: url("../img/about-us/heart.png");
+  background: url("../img/about-us/heart.svg");
 }
 .about-us__item--ball::before {
   width: 35px;
   height: 34px;
   top: 0px;
   left: 8px;
-  background: url("../img/about-us/ball.png");
+  background: url("../img/about-us/ball.svg");
 }
 .about-us__item--rocket::before {
   width: 55px;
   height: 27px;
   top: 0px;
   left: -1px;
-  background: url("../img/about-us/rocket.png");
+  background: url("../img/about-us/rocket.svg");
 }
 .about-us__item--present::before {
   width: 33px;
   height: 32px;
   top: 0px;
   left: 7px;
-  background: url("../img/about-us/present.png");
+  background: url("../img/about-us/present.svg");
 }
 @media (min-width: 768px) {
   .about-us {

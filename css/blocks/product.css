@@ -27,7 +27,7 @@
   bottom: 0;
   width: 100vw;
   height: 7px;
-  background: url("../img/product/zigzag-line-mobile.png");
+  background: url("../img/product/zigzag-line-mobile.svg");
 }
 .product__wrapper {
   width: 260px;
@@ -101,10 +101,12 @@
 .button:hover {
   color: #ffffff;
   background: #545454;
+  transition: all 0.2s;
 }
 .product__send:active,
 .button:active {
   color: rgba(255, 255, 255, 0.3);
+  transition: all 0.2s;
 }
 .product__options {
   margin: 0;
@@ -132,7 +134,7 @@
   }
   .product::after {
     height: 17px;
-    background: url("../img/product/zigzag-line-tablet.png");
+    background: url("../img/product/zigzag-line-tablet.svg");
   }
   .product__wrapper {
     width: 668px;
@@ -188,7 +190,7 @@
   }
   .product::after {
     height: 23px;
-    background: url("../img/product/zigzag-line-desktop.png");
+    background: url("../img/product/zigzag-line-desktop.svg");
   }
   .product__wrapper {
     width: 1050px;
