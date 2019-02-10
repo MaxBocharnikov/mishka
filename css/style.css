@@ -78,6 +78,12 @@ img {
   padding: 22px 0;
   margin: 0px auto;
 }
+.page-header__logo:hover {
+  opacity: 0.6;
+}
+.page-header__logo:active {
+  opacity: 0.3;
+}
 @media (min-width: 768px) {
   .page-header__wrapper {
     display: flex;
@@ -137,8 +143,8 @@ img {
   margin: 0;
   padding: 0;
   position: relative;
-  text-align: center;
   padding: 27px 46px;
+  padding-left: 88px;
 }
 .nav-menu__item::after {
   content: "";
@@ -166,6 +172,43 @@ img {
 }
 .nav-menu__link:active {
   opacity: 0.3;
+}
+.nav-menu__link--search svg {
+  position: absolute;
+  width: 21px;
+  height: 19px;
+  top: 5px;
+  left: -50px;
+  opacity: 0.3;
+  fill: #231F20;
+}
+.nav-menu__link--search:hover svg {
+  opacity: 1;
+  fill: #73D5C1;
+  transition: all 0.2s;
+}
+.nav-menu__link--search:active svg {
+  opacity: 0.3;
+  fill: #73D5C1;
+}
+.nav-menu__link--cart svg {
+  position: absolute;
+  width: 21px;
+  height: 19px;
+  top: 5px;
+  left: -50px;
+  opacity: 0.3;
+  fill: #231F20;
+}
+.nav-menu__link--cart:hover svg {
+  opacity: 1;
+  fill: #73D5C1;
+  transition: all 0.2s;
+}
+.nav-menu__link--cart:active svg {
+  opacity: 0.3;
+  fill: #73D5C1;
+  transition: all 0.2s;
 }
 .nav-menu__toggle {
   position: absolute;
@@ -220,6 +263,7 @@ img {
   }
   .nav-menu__item {
     padding: 30px 41px;
+    padding-left: 41px;
   }
   .nav-menu__item::after {
     display: none;
@@ -246,37 +290,9 @@ img {
   .nav-menu__link--search {
     font-size: 0;
   }
-  .nav-menu__link--search::before {
-    content: "";
-    position: absolute;
-    width: 18px;
-    height: 19px;
+  .nav-menu__link--search svg {
     top: -10px;
-    left: -5px;
-    background: url("../img/page-header/search-icon.png");
-  }
-  .nav-menu__link--search:hover::before {
-    background: url("../img/page-header/search-icon-hover.png");
-  }
-  .nav-menu__link--search:active::before {
-    background: url("../img/page-header/search-icon-hover.png");
-    opacity: 0.3;
-  }
-  .nav-menu__link--cart::before {
-    content: "";
-    position: absolute;
-    width: 21px;
-    height: 18px;
-    top: 5px;
-    left: -50px;
-    background: url("../img/page-header/cart-icon.png");
-  }
-  .nav-menu__link--cart:hover::before {
-    background: url("../img/page-header/cart-icon-hover.png");
-  }
-  .nav-menu__link--cart:active::before {
-    background: url("../img/page-header/cart-icon-hover.png");
-    opacity: 0.3;
+    left: -8px;
   }
 }
 @media (min-width: 1200px) {

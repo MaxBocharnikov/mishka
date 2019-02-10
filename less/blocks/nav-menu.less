@@ -34,8 +34,8 @@
 	padding: 0;
 	position:relative;
 
-	text-align: center;
 	padding: 27px 46px;
+	padding-left: 88px;
 
 	&::after {
 		content: "";
@@ -76,6 +76,64 @@
 	&:active {
 		opacity: 0.3;
 	}
+
+	&--search {
+		& svg {
+			position: absolute;	
+
+			width: 21px;
+			height: 19px;
+
+			top: 5px;
+			left: -50px;
+
+			opacity: 0.3;
+			fill: #231F20;
+			
+			}
+
+		&:hover svg {
+			opacity: 1;
+			fill: #73D5C1;
+			transition: all 0.2s; 		
+		}
+
+		&:active svg {
+			opacity: 0.3;
+			fill: #73D5C1;
+		}
+		
+	}
+
+	&--cart {
+		& svg {
+			position: absolute;	
+
+			width: 21px;
+			height: 19px;
+
+			top: 5px;
+			left: -50px;
+
+			opacity: 0.3;
+			fill: #231F20;
+			
+			}
+
+		&:hover svg {
+			opacity: 1;
+			fill: #73D5C1;
+			transition: all 0.2s; 		
+		}
+
+		&:active svg {
+			opacity: 0.3;
+			fill: #73D5C1;
+			transition: all 0.2s; 		
+		}
+
+	}
+
 }
 
 .nav-menu__toggle {
@@ -148,6 +206,7 @@
 		
 	.nav-menu__item {
 		padding: 30px 41px;
+		padding-left: 41px;
 
 		&::after {
 			display: none;
@@ -193,52 +252,11 @@
 		&--search {
 			font-size: 0;
 
-			&::before {
-				content: "";
-				position: absolute;
-
-				width: 18px;
-				height: 19px;
-
+			& svg {
 				top: -10px;
-				left: -5px;
-
-				background: url("../img/page-header/search-icon.png");
+	    		left: -8px;	
 			}
 
-			&:hover::before {
-				background: url("../img/page-header/search-icon-hover.png");
-			}
-
-			&:active::before {
-				background: url("../img/page-header/search-icon-hover.png");
-				opacity: 0.3;
-			}
-		}
-
-		&--cart {
-
-			&::before {
-				content: "";
-				position: absolute;	
-
-				width: 21px;
-				height: 18px;
-
-				top: 5px;
-				left: -50px;
-
-				background: url("../img/page-header/cart-icon.png");
-			}
-
-			&:hover::before {
-				background: url("../img/page-header/cart-icon-hover.png");
-			}
-
-			&:active::before {
-				background: url("../img/page-header/cart-icon-hover.png");
-				opacity: 0.3;
-			}
 		}
 
 	}
