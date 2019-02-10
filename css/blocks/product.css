@@ -101,10 +101,12 @@
 .button:hover {
   color: #ffffff;
   background: #545454;
+  transition: all 0.2s;
 }
 .product__send:active,
 .button:active {
   color: rgba(255, 255, 255, 0.3);
+  transition: all 0.2s;
 }
 .product__options {
   margin: 0;

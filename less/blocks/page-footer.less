@@ -100,7 +100,19 @@
      top: 43px;
 	 right: 36px;
 
-	background: url("../img/page-footer/htmlacademy.png");
+	 background: url("../img/page-footer/htmlacademy.svg");
+
+	opacity: 0.8;
+
+	&:active {
+	   opacity: 1.0;
+	    transition: all 0.2s;
+	}
+
+	 &:active {
+	   	opacity: 0.3;
+	    transition: all 0.2s;
+	}
 }
 
 @media (min-width: @tablet-width) {
@@ -162,20 +174,6 @@
 	.copyright__link {
 		top: 58px;
 	    right: -56px;
-
-	    background: url("../img/page-footer/htmlacademy.svg");
-
-	    opacity: 0.8;
-
-	    &:active {
-	    	opacity: 1.0;
-	    	transition: all 0.2s;
-	    }
-
-	    &:active {
-	    	opacity: 0.3;
-	    	transition: all 0.2s;
-	    }
 	}
 
 }

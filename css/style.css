@@ -576,10 +576,12 @@ img {
 .button:hover {
   color: #ffffff;
   background: #545454;
+  transition: all 0.2s;
 }
 .product__send:active,
 .button:active {
   color: rgba(255, 255, 255, 0.3);
+  transition: all 0.2s;
 }
 .product__options {
   margin: 0;
@@ -1262,7 +1264,16 @@ img {
   height: 34px;
   top: 43px;
   right: 36px;
-  background: url("../img/page-footer/htmlacademy.png");
+  background: url("../img/page-footer/htmlacademy.svg");
+  opacity: 0.8;
+}
+.copyright__link:active {
+  opacity: 1;
+  transition: all 0.2s;
+}
+.copyright__link:active {
+  opacity: 0.3;
+  transition: all 0.2s;
 }
 @media (min-width: 768px) {
   .page-footer__wrapper {
@@ -1307,16 +1318,6 @@ img {
   .copyright__link {
     top: 58px;
     right: -56px;
-    background: url("../img/page-footer/htmlacademy.svg");
-    opacity: 0.8;
-  }
-  .copyright__link:active {
-    opacity: 1;
-    transition: all 0.2s;
-  }
-  .copyright__link:active {
-    opacity: 0.3;
-    transition: all 0.2s;
   }
 }
 @media (min-width: 1200px) {
