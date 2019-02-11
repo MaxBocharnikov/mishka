@@ -3,6 +3,8 @@
 
 .page-description {
 	background: #F9F9F9;
+	position: relative;
+
 }
 
 
@@ -19,7 +21,15 @@
 
 	background: url("../img/page-description/hero-mobile.svg");
 	background-position-y: -15px;
+
+
+	&--catalog {
+		min-height: 177px;
+		background: none;
+		margin-bottom: 30px;
+	}
 }
+
 
 
 .page-description__list {
@@ -104,6 +114,22 @@
 //tablet
 @media (min-width: @tablet-width) {
 
+
+	.page-description {
+		&::after {
+			content: "";
+			position:absolute;
+
+			width: 100%;
+			height: 24px;
+
+			bottom: -10px;
+			left: -7px;
+
+			background: url("../img/page-description/zigzag-fill-desktop.svg")
+		}
+	}
+
 	.page-description__title {
 		padding-top: 154px;
 		min-height: 627px;
@@ -117,25 +143,19 @@
 			& br {
 			 	display: none;
 			}
+
+			&--catalog {
+				min-height: 213px;
+				background: none;
+				padding-top: 94px;
+				margin-bottom: 80px;
+			}
 	}
 
 
 	.page-description__list {
 		display: flex;
 		position: relative;
-
-		&::after {
-			content: "";
-			position:absolute;
-
-			width: 768px;
-			height: 24px;
-
-			bottom: -10px;
-			left: -7px;
-
-			background: url("../img/page-description/zigzag-fill-desktop.svg") no-repeat;
-		}
 	}
 
 	.page-description__item {
@@ -172,6 +192,19 @@
 
 @media (min-width: @desktop-width) 	{
 
+
+	.page-description {
+		&::after {
+			width: 100%;
+			height: 34px;
+
+			bottom: -12px;
+			left: -33px;
+
+			background: url("../img/page-description/zigzag-fill-desktop-1.svg");
+		}
+	}
+
 	.page-description__title {
 		font-size: 53px;
 		line-height: 57px;
@@ -182,20 +215,16 @@
 
 	
 		background: url("../img/page-description/hero-desktop-1.svg") no-repeat;
-		background-position-x: -270px;	
+		background-position-x: -270px;
+
+		&--catalog {
+			min-height: 238px;
+			margin-bottom: 129px;
+
+			background: none;
+		}	
 	}
 
-	.page-description__list {
-		&::after {
-			width: 1250px;
-			height: 34px;
-
-			bottom: -12px;
-			left: -33px;
-
-			background: url("../img/page-description/zigzag-fill-desktop-1.svg") no-repeat;
-		}
-	}
 
 	.page-description__item {
 		padding-top: 26px;
