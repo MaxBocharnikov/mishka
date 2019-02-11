@@ -106,9 +106,48 @@
 
 
 @media(min-width: @tablet-width) {
+
+	.catalog-list__wrapper {
+		width: @tablet-wrapper-width;	
+	}
+
+	.catalog-list__item {
+		display: flex;
+		width: 100%;
+
+		margin-bottom: 53px;
+	}
+
 	.catalog-list__img {
 		width: 334px;
 		height: 334px;
+	}
+
+	.catalog-list__text {
+		display: flex;
+		flex-direction: column;	
+		width: 50%;
+	}
+
+	.catalog-list__title {
+		padding-top: 25px;
+		margin-bottom: 4px;
+
+		font-size: 20px;
+	}
+
+	.catalog-list__description {
+		font-size: 15px;
+
+		flex-grow:1;
+	}
+
+	.catalog-list__price {
+		font-size: 17px;
+
+		& svg {
+			right: 30px;
+		}
 	}
 }
 
@@ -116,8 +155,29 @@
 
 
 @media(min-width: @desktop-width) {
+
+	.catalog-list__wrapper {
+		width: @desktop-wrapper-width;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;	
+	}
+
+
+	.catalog-list__item {
+		width: 315px;
+		flex-direction: column;
+		margin-bottom: 53px;
+	}
+
 	.catalog-list__img {
-		width: 316px;
+		width: 100%;
 		height: 462px;
 	}
+
+	.catalog-list__text {
+		width: 100%;
+		flex-grow: 1;
+	}
+
 }

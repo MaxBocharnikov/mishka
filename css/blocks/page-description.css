@@ -119,10 +119,10 @@
     display: none;
   }
   .page-description__title--catalog {
-    min-height: 213px;
+    min-height: 230px;
     background: none;
     padding-top: 94px;
-    margin-bottom: 80px;
+    margin-bottom: 73px;
   }
   .page-description__list {
     display: flex;
@@ -166,8 +166,8 @@
     background-position-x: -270px;
   }
   .page-description__title--catalog {
-    min-height: 238px;
-    margin-bottom: 129px;
+    min-height: 250px;
+    margin-bottom: 132px;
     background: none;
   }
   .page-description__item {
