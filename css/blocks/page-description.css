@@ -20,6 +20,9 @@
   background: #F9F9F9;
   position: relative;
 }
+.page-description--catalog {
+  background: #F2F1F2;
+}
 .page-description__title {
   margin: 0;
   padding: 0;

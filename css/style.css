@@ -98,6 +98,7 @@ img {
     position: absolute;
     top: 109px;
     right: 0;
+    z-index: 1;
     font-size: 15px;
   }
 }
@@ -342,6 +343,9 @@ img {
 .page-description {
   background: #F9F9F9;
   position: relative;
+}
+.page-description--catalog {
+  background: #F2F1F2;
 }
 .page-description__title {
   margin: 0;
@@ -1592,4 +1596,85 @@ input[type="radio"]:checked + label {
     width: 100%;
     flex-grow: 1;
   }
+}
+.promo {
+  margin-bottom: 58px;
+}
+.promo__wrapper {
+  position: relative;
+  width: 260px;
+  border: 1px solid #EEEEEE;
+}
+.promo__video {
+  position: relative;
+  width: 260px;
+  height: 150px;
+  background: url("../img/promo/video-mobile.svg");
+  margin-top: 95px;
+  margin-bottom: 34px;
+}
+.promo_play {
+  position: absolute;
+  top: 43px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 101px;
+  height: 78px;
+  background: url("../img/promo/icon-play.svg");
+  border: none;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+}
+.promo_play:hover {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+.promo_play:active {
+  opacity: 0.3;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -o-transform: scale(0.8);
+}
+.promo__header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 12px;
+  padding-left: 90px;
+  padding-right: 42px;
+  font-size: 17px;
+  line-height: 24px;
+}
+.promo__header::before {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 22px;
+  top: 23px;
+  left: 32px;
+  background: url("../img/promo/video.svg");
+}
+.promo__description {
+  font-size: 13px;
+  line-height: 24px;
+  color: #444444;
+  padding: 0 35px;
+  margin-bottom: 25px;
+}
+.promo__button {
+  display: inline-block;
+  margin-left: 39px;
+  width: auto;
+  padding: 16px 24px;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: bold;
+  color: #444444;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 2px solid #444444;
+  margin-bottom: 33px;
 }
