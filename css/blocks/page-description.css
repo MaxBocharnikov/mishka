@@ -20,6 +20,9 @@
   background: #F9F9F9;
   position: relative;
 }
+.page-description--catalog {
+  background: #F2F1F2;
+}
 .page-description__title {
   margin: 0;
   padding: 0;
@@ -119,10 +122,10 @@
     display: none;
   }
   .page-description__title--catalog {
-    min-height: 213px;
+    min-height: 230px;
     background: none;
     padding-top: 94px;
-    margin-bottom: 80px;
+    margin-bottom: 73px;
   }
   .page-description__list {
     display: flex;
@@ -166,8 +169,8 @@
     background-position-x: -270px;
   }
   .page-description__title--catalog {
-    min-height: 238px;
-    margin-bottom: 129px;
+    min-height: 250px;
+    margin-bottom: 132px;
     background: none;
   }
   .page-description__item {
