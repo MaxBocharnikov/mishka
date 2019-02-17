@@ -43,6 +43,7 @@
   height: 78px;
   background: url("../img/promo/icon-play.svg");
   border: none;
+  outline: none;
   -moz-transition: all 0.2s ease-out;
   -o-transition: all 0.2s ease-out;
   -webkit-transition: all 0.2s ease-out;
