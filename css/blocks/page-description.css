@@ -23,6 +23,9 @@
 .page-description--catalog {
   background: #F2F1F2;
 }
+.page-description--form {
+  background: #F2F1F2;
+}
 .page-description__title {
   margin: 0;
   padding: 0;
@@ -40,6 +43,11 @@
   min-height: 177px;
   background: none;
   margin-bottom: 30px;
+}
+.page-description__title--form {
+  min-height: 177px;
+  background: none;
+  margin-bottom: 22px;
 }
 .page-description__list {
   position: relative;
@@ -107,8 +115,9 @@
     width: 100%;
     height: 24px;
     bottom: -10px;
-    left: -7px;
+    left: 0px;
     background: url("../img/page-description/zigzag-fill-desktop.svg");
+    background-size: cover;
   }
   .page-description__title {
     padding-top: 154px;
@@ -126,6 +135,12 @@
     background: none;
     padding-top: 94px;
     margin-bottom: 73px;
+  }
+  .page-description__title--form {
+    min-height: 230px;
+    background: none;
+    padding-top: 94px;
+    margin-bottom: 65px;
   }
   .page-description__list {
     display: flex;
@@ -157,8 +172,9 @@
     width: 100%;
     height: 34px;
     bottom: -12px;
-    left: -33px;
+    left: 0px;
     background: url("../img/page-description/zigzag-fill-desktop-1.svg");
+    background-size: cover;
   }
   .page-description__title {
     font-size: 53px;
@@ -169,6 +185,11 @@
     background-position-x: -270px;
   }
   .page-description__title--catalog {
+    min-height: 250px;
+    margin-bottom: 132px;
+    background: none;
+  }
+  .page-description__title--form {
     min-height: 250px;
     margin-bottom: 132px;
     background: none;
