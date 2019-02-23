@@ -73,7 +73,6 @@ gulp.task('style:build', function () {
         	cascade: false
         })) //Добавим вендорные префиксы
         .pipe(cssmin()) //Сожмем
-        .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest(path.build.css)) //И в build
         .pipe(reload({stream: true}));
 });
